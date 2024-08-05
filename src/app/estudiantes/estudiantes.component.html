@@ -1,0 +1,27 @@
+<div>
+  <h2>Lista de Estudiantes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Curso</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of estudiantes">
+        <td>{{ estudiante.idEstudiante }}</td>
+        <td>{{ estudiante.nombre }}</td>
+        <td>{{ estudiante.apellido }}</td>
+        <td>{{ estudiante.edad }}</td>
+        <td>{{ estudiante.fechaNacimiento }}</td>
+        <td>{{ estudiante.idCurso }}</td>
+        <td>{{ estudiante.direccion }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
